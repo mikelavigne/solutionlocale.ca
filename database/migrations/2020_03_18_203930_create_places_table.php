@@ -20,7 +20,7 @@ class CreatePlacesTable extends Migration
             $table->string('address');
             $table->string('province');
             $table->integer('region_id');
-            $table->string('subRegion');
+            $table->string('subRegion')->nullable();
             $table->string('city');
             $table->string('countryCode');
             $table->string('postalCode')->nullable();
